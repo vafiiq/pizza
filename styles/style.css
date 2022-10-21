@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.container{
+    position: absolute;
+    top: 0;
+}
+.instruction {
+  display: none;
+}
+.bread_box {
+  display: flex;
+}
+.bread {
+  display: none;
+}
+.swipe {
+  transform: translateY(-200%);
+}
+
+.card {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.zakaz {
+  display: none;
+}
+.pizza_img:hover {
+  filter: alpha (Opacity=100);
+
+  opacity: 1;
+}
+.pizza_img:active {
+  animation: jump 0.2s ease infinite;
+}
+@keyframes jump {
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.pizza_img {
+  width: 150px;
+  height: 150px;
+
+  filter: alpha (Opacity=25);
+
+  opacity: 0.25;
+}
+.inputs_first {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.inputs_second {
+  position: relative;
+  left: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.korzina {
+  padding-top: 55px;
+  height: 700px;
+  border-left: 2px solid black;
+}

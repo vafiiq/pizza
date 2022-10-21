@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.instruction{
+    display: none;
+}
+.bread_box{
+    display: flex;
+}
+.bread{
+    display: none;
+}
+
+.pizza_img{
+    width: 150px;
+    height: 150px;
+}
+.inputs_first{
+    position: absolute;  
+    display: flex;
+    flex-direction: column;
+}
+.inputs_second{
+    position: relative;  
+    left: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.korzina{
+    padding-top: 55px;
+    height: 700px;
+    border-left: 2px  solid black;
+}
